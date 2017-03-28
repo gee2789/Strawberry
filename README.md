@@ -5,7 +5,12 @@ Project goal is to create a user interface to interact with the Google Open Civi
 Short-Term Goals:
 1. Discuss Models
   - Account/User
+    - address : string
+    - district : integer
   - Representative
+    - name : string
+    - pic_url : string
+    - party : string
   - Join Table (Account/Rep)
 
 2. Discuss API Elements to call
