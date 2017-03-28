@@ -1,0 +1,9 @@
+<h1>Bill Me Now or Bill Me Later</h1>
+<div class= "search form">
+  <%= form_tag("/", method:"post") do %>
+  <%= label_tag("query", "Search subject:") %>
+  <%= text_field_tag ("query") %>
+  <%= select_tag "state", options_for_select(@states, "AK") %>
+  <%= submit_tag ("Bill Me Now") %>
+  <%end%>
+</div>
