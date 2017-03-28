@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyString
+  year: 1
+  state: MyString
+  last_action_date: MyString
+  bill_number: MyString
+  votes: 1
+  subject: MyString
+  type: 
+
+two:
+  title: MyString
+  description: MyString
+  year: 1
+  state: MyString
+  last_action_date: MyString
+  bill_number: MyString
+  votes: 1
+  subject: MyString
+  type: 

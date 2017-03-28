@@ -1,0 +1,35 @@
+0. Get user input on submit
+- On submit action get the user input ($('#id').val())
+
+1. Make an AJAX request to the API
+- let search_query = $('#search_query').val()
+$.ajax({
+- method: "GET"
+- url: https://api.legiscan.com/?key=1da8e9a29801464091ed4d9ba6e595f4&op=search&state=
+        ${state_abbrev}&query=${search_query}
+    *State: From dropdown menu
+    *Query: Take search term from user
+})
+.success(function(response) {
+  Iterate through the responses to return multiple
+  Filter them by something (date)
+  Give option for them to see 'more' after a certain point
+  let bill_number = response.status.searchresult[i].bill_number
+  $('#bill_number').append('...')
+  let title = response.status.searchresult[i].title
+  $('#title').append('...')
+  let last_action_date = response.status.searchresult[i].last_action_date
+  $('#last_action_date').append('...')
+  let last_action = response.status.searchresult[i].last_action
+  $('#last_action').append('...')
+  }
+)
+
+2. Put inside the appropriate html
+- Bill number
+- Title
+- Last action date
+-- let artist_name = $('#artist_name').val
+
+3. Create a new instance of an artist
+- let artist = new Artist(artist_name)
